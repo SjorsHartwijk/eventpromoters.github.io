@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-ExtraBold.woff2') format('woff2'),
+        url('fonts/Outfit-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-Bold.woff2') format('woff2'),
+        url('fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-Regular.woff2') format('woff2'),
+        url('fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --blue: #030041;
+    --white: #fff;
+    --black: #000;
+    --pink: #ff0071;
+    --pink-contrast: #E60067;
+    --text: #333;
+    --background: #E6E6EC;
+}
+body {
+    font-family: 'Outfit';
+    background-color: var(--background);
+    color: var(--text);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 800;
+}
+.navbar {
+    background-color: var(--blue);
+    color: var(--white);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    &.navbar-light {
+        .navbar-toggler {
+            border: 0px;
+            color: var(--white) !important;
+        }
+    }
+    .navbar-brand {
+        img {
+            margin-right: 15px;
+        }
+        .logotype {
+            color: var(--pink);
+            font-weight: 700;
+        }
+    }
+    .nav-item {
+        .nav-link {
+            font-weight: 600;
+            color: var(--white) !important;
+            &.active {
+                color: var(--pink-contrast) !important;
+            }
+        }
+    }
+}
+header {
+    height: 100vh;
+    background-image: url('images/banner.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+        color: var(--white);
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+        font-weight: 700;
+        span {
+            color: var(--white);
+        }
+    }
+}
+.pre-container {
+    display: block;
+    background-color: var(--blue);
+    height: 66px;
+    padding: 15px;
+}
+.card {
+    border-radius: 5px;
+    border: 0px solid;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+footer {
+    padding: 20px 0;
+    @media(min-width: 1024px) {
+        padding: 40px 0;
+    }
+    background-color: var(--blue);
+    color: var(--white);
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        li {
+            padding: .25em 0;
+        }
+    }
+}
