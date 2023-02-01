@@ -116,4 +116,9 @@ footer ul {
 }
 footer ul li {
   padding: 0.25em 0;
+}
+
+.form-check-input:checked {
+  background-color: var(--pink);
+  border-color: var(--pink-contrast);
 }/*# sourceMappingURL=style.css.map */

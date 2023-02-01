@@ -120,3 +120,7 @@ footer {
         }
     }
 }
+.form-check-input:checked {
+    background-color: var(--pink);
+    border-color: var(--pink-contrast);
+}
