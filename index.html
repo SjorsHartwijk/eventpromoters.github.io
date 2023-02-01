@@ -37,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <header id="headerPicture">
+    <header>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-9 text-center">
@@ -101,17 +101,6 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-
-        var myPix = new Array("images/banner1.webp","images/banner2.webp","images/banner3.webp","images/banner4.webp");
-
-        function choosePic() {
-            var randomNum = Math.floor(Math.random() * myPix.length);
-            document.getElementById("headerPicture").src = myPix[randomNum];
-        }
-
-        window.onload = choosePic;
-    </script>
 </body>
 
 </html>
