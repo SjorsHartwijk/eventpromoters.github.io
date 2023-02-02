@@ -100,6 +100,10 @@ header .title span {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.btn {
+  border-radius: 0;
+}
+
 footer {
   padding: 20px 0;
   background-color: var(--blue);

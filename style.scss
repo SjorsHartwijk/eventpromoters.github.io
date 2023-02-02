@@ -105,6 +105,9 @@ header {
     border: 0px solid;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
 }
+.btn {
+    border-radius: 0;
+}
 footer {
     padding: 20px 0;
     @media(min-width: 1024px) {
