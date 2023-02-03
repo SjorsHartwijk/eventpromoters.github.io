@@ -125,4 +125,8 @@ footer ul li {
 .form-check-input:checked {
   background-color: var(--pink);
   border-color: var(--pink-contrast);
+}
+
+.form-control {
+  border-radius: 0;
 }/*# sourceMappingURL=style.css.map */
