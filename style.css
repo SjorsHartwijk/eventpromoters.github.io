@@ -26,12 +26,11 @@
   --pink: #ff0071;
   --pink-contrast: #FF66AB;
   --text: #333;
-  --background: #E6E6EC;
 }
 
 body {
   font-family: "Outfit";
-  background-color: var(--background);
+  background-color: white;
   color: var(--text);
   accent-color: var(--pink);
 }
@@ -129,4 +128,35 @@ footer ul li {
 
 .form-control {
   border-radius: 0;
+}
+
+.triangle.top {
+  -webkit-clip-path: polygon(100% 85%, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 85%, 0% 100%, 100% 100%);
+  height: 200px;
+  margin-top: -200px;
+}
+.triangle.top.white {
+  background-color: #fff;
+}
+.triangle.top.black {
+  background-color: #000;
+}
+.triangle.top.blue {
+  background-color: #030041;
+}
+.triangle.bottom {
+  -webkit-clip-path: polygon(0 15%, 0 0, 100% 0);
+          clip-path: polygon(0 15%, 0 0, 100% 0);
+  height: 200px;
+  margin-bottom: -200px;
+}
+.triangle.bottom.white {
+  background-color: #fff;
+}
+.triangle.bottom.black {
+  background-color: #000;
+}
+.triangle.bottom.blue {
+  background-color: #030041;
 }/*# sourceMappingURL=style.css.map */
