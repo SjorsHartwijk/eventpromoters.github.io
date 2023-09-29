@@ -120,6 +120,14 @@ header {
     }
 }
 main {
+    h1,h2,h3,h4,h5,h6 {
+        color: var(--blue);
+    }
+    .card {
+        .card-title {
+            color: var(--bright-blue);
+        }
+    }
     a {
         color: var(--bright-blue);
         text-decoration: none;
