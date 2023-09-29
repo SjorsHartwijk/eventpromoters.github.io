@@ -21,11 +21,11 @@
 }
 :root {
   --blue: #030041;
+  --bright-blue: #0d6efd;
   --white: #fff;
   --black: #000;
-  --pink: #ff0071;
-  --pink-contrast: #FF66AB;
-  --text: #333;
+  --green: #00fda2;
+  --text: #040415;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   background-color: white;
   color: var(--text);
-  accent-color: var(--pink);
+  accent-color: var(--green);
 }
 
 b, strong {
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .navbar-brand .logotype {
   font-family: "Outfit";
-  color: var(--pink);
+  color: var(--green);
   font-weight: 700;
 }
 .navbar .nav-item .nav-link {
@@ -67,12 +67,35 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white) !important;
 }
 .navbar .nav-item .nav-link.active {
-  color: var(--pink-contrast) !important;
+  color: var(--green) !important;
+}
+
+.skiplink a {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.skiplink a:focus {
+  position: fixed;
+  z-index: 1035;
+  width: auto;
+  height: auto;
+  clip: auto;
+  margin-top: 1em;
+  margin-left: 1em;
+  padding: 0.5em 0.75em;
+  background-color: var(--green);
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 header {
   height: 100vh;
-  background-image: url("images/banner1.webp");
+  display: flex;
+  background: url("images/banner.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -87,6 +110,32 @@ header .title {
 }
 header .title span {
   color: var(--white);
+}
+
+main a {
+  color: var(--bright-blue);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+main a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--bright-blue);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+main a:hover, main a :focus {
+  color: var(--bright-blue);
+}
+main a:hover::after, main a :focus::after {
+  width: 100%;
+  left: 0;
 }
 
 .pre-container {
@@ -128,10 +177,64 @@ footer ul {
 footer ul li {
   padding: 0.25em 0;
 }
+footer ul.socialmedia li {
+  display: inline;
+  margin-right: 0.75em;
+}
+footer ul.socialmedia li a {
+  text-decoration: none;
+  width: 55px;
+  height: 55px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul.socialmedia li a:after {
+  display: none;
+}
+footer ul.socialmedia li a:hover, footer ul.socialmedia li a :focus {
+  text-decoration: none;
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+footer ul.socialmedia li a i {
+  font-size: 1.5em;
+}
+footer ul.socialmedia li:last-child {
+  margin-right: 0;
+}
+footer a {
+  color: var(--green);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+footer a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--green);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+footer a:hover, footer a :focus {
+  color: var(--green);
+}
+footer a:hover::after, footer a :focus::after {
+  width: 100%;
+  left: 0;
+}
 
 .form-check-input:checked {
-  background-color: var(--pink);
-  border-color: var(--pink-contrast);
+  background-color: var(--green);
+  border-color: var(--green);
 }
 
 .form-control {
@@ -145,13 +248,13 @@ footer ul li {
   margin-top: -100px;
 }
 .triangle.top.white {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .triangle.top.black {
-  background-color: #000;
+  background-color: var(--black);
 }
 .triangle.top.blue {
-  background-color: #030041;
+  background-color: var(--blue);
 }
 .triangle.bottom {
   -webkit-clip-path: polygon(0 50%, 0 0, 100% 0);
@@ -160,11 +263,11 @@ footer ul li {
   margin-bottom: -100px;
 }
 .triangle.bottom.white {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .triangle.bottom.black {
-  background-color: #000;
+  background-color: var(--black);
 }
 .triangle.bottom.blue {
-  background-color: #030041;
+  background-color: var(--blue);
 }/*# sourceMappingURL=style.css.map */
