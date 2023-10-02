@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 .navbar {
     background-color: var(--blue);
     color: var(--white);
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    // box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
     &.navbar-light {
         .navbar-toggler {
             border: 0px;
@@ -73,6 +73,11 @@ h1,h2,h3,h4,h5,h6 {
             color: var(--white) !important;
             &.active {
                 color: var(--green) !important;
+            }
+        }
+        &:hover,:focus {
+            .nav-link {
+                color: var(--green);
             }
         }
     }
@@ -101,21 +106,23 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 header {
-    height: 100vh;
+    height: calc(60dvh - 66px);
     display: flex;
-    background: url('images/banner.webp');
-    background-size: cover;
-    background-position: center;
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
+    @media(min-width: 1024px) {
+        height: calc(100dvh - 66px)
+    }
     .title {
         font-family: 'Outfit';
         color: var(--white);
         text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
         font-weight: 700;
+        text-wrap: balance;
         span {
-            color: var(--white);
+            color: var(--green);
         }
     }
 }

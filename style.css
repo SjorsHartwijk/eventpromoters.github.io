@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   background-color: var(--blue);
   color: var(--white);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .navbar.navbar-light .navbar-toggler {
   border: 0px;
@@ -68,6 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .nav-item .nav-link.active {
   color: var(--green) !important;
+}
+.navbar .nav-item:hover .nav-link, .navbar .nav-item :focus .nav-link {
+  color: var(--green);
 }
 
 .skiplink a {
@@ -93,23 +95,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  height: 100vh;
+  height: calc(60dvh - 66px);
   display: flex;
-  background: url("images/banner.webp");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  header {
+    height: calc(100dvh - 66px);
+  }
 }
 header .title {
   font-family: "Outfit";
   color: var(--white);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   font-weight: 700;
+  text-wrap: balance;
 }
 header .title span {
-  color: var(--white);
+  color: var(--green);
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
