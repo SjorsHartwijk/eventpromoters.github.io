@@ -48,8 +48,8 @@
         </div>
     </nav>
     <main class="container" id="maincontent" role="main">
-        <div class="row py-5">
-            <div class="col-12 col-md-6">
+        <div class="row">
+            <div class="col-12 col-md-6 py-5">
                 <h1 class="display-2">Contact</h1>
                 <p>Heb je vragen, suggesties, of wil je meer informatie over onze diensten? We staan klaar om je te helpen! Aarzel niet om contact met ons op te nemen via onderstaande contactgegevens of vul het formulier in. Ons toegewijde team zal zo snel mogelijk reageren.</p>
 
@@ -72,7 +72,22 @@
 
             </div>
             <div class="col-12 col-md-6">
-                <div id="mapboxMap" style="height: 80vh; width: 100%;"></div>
+                <div id='map' style='width: 100%; height: 75dvh'></div>
+                <script>
+                  mapboxgl.accessToken = 'pk.eyJ1Ijoic2pvcnNoYXJ0d2lqayIsImEiOiJjbDh3eGwwZGowMTR0M3ZudjRrNGYyZGM2In0.CwvSLSP0c-13LLgC-4Hs5A';
+                  var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/sjorshartwijk/clp9pgox0002l01pj4s6w192c',
+                    center: [5.060542, 51.547265], // starting position [lng, lat]
+                    zoom: 12 // starting zoom
+                  });
+                  // Create a default Marker and add it to the map.
+                    const marker1 = new mapboxgl.Marker({color: 'black'})
+                    .setLngLat([5.060542, 51.547265])
+                    .addTo(map);
+ 
+                </script>
+
             </div>
         </div>
     </main>
@@ -107,16 +122,6 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoic2pvcnNoYXJ0d2lqayIsImEiOiJjbDh3eGwwZGowMTR0M3ZudjRrNGYyZGM2In0.CwvSLSP0c-13LLgC-4Hs5A';
-        var map = new mapboxgl.Map({
-            container: 'mapboxWorldmap',
-            projection: 'naturalEarth',
-            style: 'mapbox://styles/sjorshartwijk/clpaxmeyl006h01pgcc7aabwz',
-            center: [50.1732, 9.1499], // starting position [lng, lat]
-            zoom: 3 // starting zoom
-        });
-    </script>
 </body>
 
 </html>
