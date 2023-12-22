@@ -22,6 +22,9 @@
     <link rel="icon" href="images/favicon-dark.png" media="(prefers-color-scheme: dark)">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/396ea48297.js" crossorigin="anonymous"></script>
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -68,6 +71,9 @@
                 <p>Maandag - Vrijdag: 9:00 - 17:00 uur</p>
 
             </div>
+            <div class="col-12 col-md-6">
+                <div id="mapboxMap" style="height: 80vh; width: 100%;"></div>
+            </div>
         </div>
     </main>
     <footer class="mt-auto">
@@ -101,6 +107,16 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2pvcnNoYXJ0d2lqayIsImEiOiJjbDh3eGwwZGowMTR0M3ZudjRrNGYyZGM2In0.CwvSLSP0c-13LLgC-4Hs5A';
+        var map = new mapboxgl.Map({
+            container: 'mapboxWorldmap',
+            projection: 'naturalEarth',
+            style: 'mapbox://styles/sjorshartwijk/clpaxmeyl006h01pgcc7aabwz',
+            center: [50.1732, 9.1499], // starting position [lng, lat]
+            zoom: 3 // starting zoom
+        });
+    </script>
 </body>
 
 </html>
