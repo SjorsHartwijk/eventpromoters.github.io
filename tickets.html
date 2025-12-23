@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventpromoters | Digitale Marketing voor Events</title>
+    <meta name="description" content="Eventpromoters biedt digitale marketingoplossingen voor evenementen, artiesten en festivals. Verhoog kaartverkoop, versterk betrokkenheid en maak impact.">
+    <meta name="keywords" content="evenementen, digitale marketing, artiesten, festivals, online marketing, webontwikkeling, advertenties, contentcreatie">
+    <meta name="author" content="Eventpromoters">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#260042">
+    <meta property="og:title" content="Eventpromoters | Digitale Marketing voor Events">
+    <meta property="og:description" content="Eventpromoters biedt digitale marketingoplossingen voor evenementen, artiesten en festivals. Verhoog kaartverkoop, versterk betrokkenheid en maak impact.">
+    <meta property="og:url" content="https://www.eventpromoters.nl">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eventpromoters">
+    <meta property="og:locale" content="nl_NL">          
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/fonts/FuturaPT-BoldObl.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/FuturaPTCond-BoldObl.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/FuturaPT-DemiObl.woff2" as="font" type="font/woff2" crossorigin>
+
+
+</head>
+<body>
+    <a href="#ticketshop" class="visually-hidden-focusable skip-link" tabindex="0" aria-label="Sla navigatie over en ga naar hoofdinhoud">Direct naar hoofdinhoud</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/images/logo-white.png" alt="Eventpromoters logo" title="Eventpromoters"><span class="d-none d-md-inline">Eventpromoters</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Diensten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Over Ons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Festival Ticketshop -->
+    <section id="ticketshop" class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+                <h2 class="mb-4">Festival Ticketshop</h2>
+                <p class="mb-4">Koop hier eenvoudig je tickets voor onze aankomende festivals!</p>
+                <form class="ticketshop-form p-4 border rounded bg-light shadow-sm">
+                    <div class="mb-3">
+                        <label for="festival" class="form-label">Kies je festival</label>
+                        <select class="form-select" id="festival" name="festival" required>
+                            <option value="">Selecteer een festival</option>
+                            <option value="summerbeats">Summer Beats 2025</option>
+                            <option value="nightvibes">Night Vibes</option>
+                            <option value="danceparade">Dance Parade</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tickets" class="form-label">Aantal tickets</label>
+                        <input type="number" class="form-control" id="tickets" name="tickets" min="1" max="10" value="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-theme w-100">Bestel Tickets</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="py-3 py-lg-5">
+        <div class="container">
+            <div class="row py-3">
+                <!-- Quick Company Info -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h3>Eventpromoters</h3>
+                    <p>Digitale marketing specialisten voor evenementen, artiesten en festivals.</p>
+                </div>
+                <!-- Relevant Links -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h3>Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" aria-label="Bekijk onze diensten">Diensten</a></li>
+                        <li><a href="#about" aria-label="Lees meer over ons">Over Ons</a></li>
+                        <li><a href="#contact" aria-label="Neem contact met ons op">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:info@eventpromoters.nl" aria-label="Stuur een e-mail naar info@eventpromoters.nl">info@eventpromoters.nl</a></p>
+                    <p>Telefoon: <a href="tel:+31612345678" aria-label="Bel ons op +31 6 12345678">+31 6 12345678</a></p>
+                </div>
+                <!-- Social Media -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h3>Volg Ons</h3>
+                    <a href="#" class="me-3" aria-label="Volg ons op Bluesky"><i class="bi bi-bluesky"></i></a>
+                    <a href="#" class="me-3" aria-label="Volg ons op Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Volg ons op LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="mb-0 text-center">&copy; 2025 Eventpromoters. Alle rechten voorbehouden.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
