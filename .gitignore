@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------
+# AI-tools: configuratie, skills, caches en rapporten
+# ---------------------------------------------------------------
+
+# Claude Code
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# Gedeelde agent-skills (npx skills) + lockfile
+.agents/
+skills-lock.json
+AGENTS.md
+
+# Impeccable (design-plugin) en Taste Skill
+.impeccable/
+.taste-skill/
+PRODUCT.md
+DESIGN.md
+shots/
+
+# Overige AI-editors en agents
+.cursor/
+.cursorrules
+.windsurf/
+.windsurfrules
+.codex/
+.gemini/
+GEMINI.md
+.github/copilot-instructions.md
+.aider*
+.continue/
+.cline/
+.clinerules
+.roo/
+.kilocode/
+.amp/
+.codebuddy/
+.commandcode/
+.crush/
+.goose/
+.junie/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.opencode/
+.pochi/
+.qoder/
+.qwen/
+.trae/
+.zencoder/
+.zed/
